@@ -7,6 +7,7 @@
 //
 
 import Intents
+import DemoKit;
 
 // As an example, this class is set up to handle Message intents.
 // You will want to replace this or add other intents as appropriate.
@@ -44,40 +45,25 @@ class IntentHandler: INExtension ,  INSendMessageIntentHandling{
         case "开空调":
             self.url="http://192.168.1.239/ac/on"
             break
+        case "蚂蚁森林":
+            self.url="alipay://platformapi/startapp?appId=60000002"
         default:
             completion([INSendMessageRecipientResolutionResult.unsupported(forReason: .noAccount)]);
-            break;
+            return;
         }
         completion([INSendMessageRecipientResolutionResult.notRequired()]);
         
     }
-    func load(url: URL)->String {
-        let sessionConfig = URLSessionConfiguration.default;
-        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
-        let request = URLRequest(url: url);
-        var result:String="";
-        let task = session.dataTask(with: request) {
-            (data, response, error) in
-            // check for any errors
-            guard error == nil else {
-                print("error calling GET on " + url.absoluteString);
-                print(error!)
-                result="error";
-                return;
-            }
-            result="success";
-            return ;
-            
-        }
-        task.resume();
-        return result;
-    }
+    
     
     func resolveContent(for intent: INSendMessageIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
         guard let real_url = URL(string: self.url) else {
             return //be safe
         }
-        var text=self.load(url: real_url);
+        var text=Utils.sharded.load(url: real_url);
+        if(text=="failed"){
+            text=url;
+        }
         completion(INStringResolutionResult.success(with: text))
         
         
@@ -86,14 +72,14 @@ class IntentHandler: INExtension ,  INSendMessageIntentHandling{
     
     // Once resolution is completed, perform validation on the intent and provide confirmation (optional).
     
-    func confirm(intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
-        // Verify user is authenticated and your app is ready to send a message.
-        //        handler(intent:intent,completion:completion);
-        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
-        
-        let response = INSendMessageIntentResponse(code: .ready, userActivity: userActivity)
-        completion(response)
-    }
+//    func confirm(intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
+//        // Verify user is authenticated and your app is ready to send a message.
+//        //        handler(intent:intent,completion:completion);
+//        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
+//        
+//        let response = INSendMessageIntentResponse(code: .ready, userActivity: userActivity)
+//        completion(response)
+//    }
     
     // Handle the completed intent (requ`ired).
     

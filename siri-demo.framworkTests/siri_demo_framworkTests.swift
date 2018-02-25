@@ -1,15 +1,15 @@
 //
-//  siri_demoTests.swift
-//  siri_demoTests
+//  siri_demo_framworkTests.swift
+//  siri-demo.framworkTests
 //
-//  Created by jxy on 21/02/2018.
+//  Created by jxy on 25/02/2018.
 //  Copyright © 2018 labmbda. All rights reserved.
 //
 
 import XCTest
-@testable import siri_demo
+@testable import siri_demo_framwork
 
-class siri_demoTests: XCTestCase {
+class siri_demo_framworkTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

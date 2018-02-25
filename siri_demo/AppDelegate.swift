@@ -7,18 +7,28 @@
 //
 
 import UIKit
+import Intents;
+import DemoKit;
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let myVocab = ["开空调", "关空调", "蚂蚁森林"]
+        let myVocabSet = NSOrderedSet(array: myVocab) //Convert myVocab to an NSOrderedSet
+        
+        let vocabulary = INVocabulary.shared()
+        vocabulary.setVocabularyStrings(myVocabSet, of: .contactName);
+        Utils.sharded.openURL = { UIApplication.shared.open($0, options: [:], completionHandler: nil)}
+        Utils.sharded.load(url: URL(string:"http://www.baidu.com")!)
         return true
     }
 
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
