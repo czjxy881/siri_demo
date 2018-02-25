@@ -21,6 +21,7 @@
 		8BA90AB52041C0C7000D10D9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA90AB32041C0C7000D10D9 /* MainInterface.storyboard */; };
 		8BA90AB92041C0C7000D10D9 /* SiriDemoUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8BA90AAC2041C0C7000D10D9 /* SiriDemoUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8BA90ABC2041C0C7000D10D9 /* SiriDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8BA90AA32041C0C6000D10D9 /* SiriDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8BD905892042743F00673A9D /* OpenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD905882042743F00673A9D /* OpenUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		8BA90AB12041C0C7000D10D9 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		8BA90AB42041C0C7000D10D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		8BA90AB62041C0C7000D10D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD905882042743F00673A9D /* OpenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				8B877D1E203DCEE90004E7AC /* Assets.xcassets */,
 				8B877D20203DCEE90004E7AC /* LaunchScreen.storyboard */,
 				8B877D23203DCEE90004E7AC /* Info.plist */,
+				8BD905882042743F00673A9D /* OpenUtils.swift */,
 			);
 			path = siri_demo;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B877D1A203DCEE90004E7AC /* SecondViewController.swift in Sources */,
+				8BD905892042743F00673A9D /* OpenUtils.swift in Sources */,
 				8B877D16203DCEE90004E7AC /* AppDelegate.swift in Sources */,
 				8B877D18203DCEE90004E7AC /* FirstViewController.swift in Sources */,
 			);
