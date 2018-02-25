@@ -19,10 +19,12 @@ func initWebServer() {
         let baseURLCount:Int=(request.url.baseURL?.absoluteString.count)!;
         let abString=request.url.absoluteString;
         var aim=request.url.absoluteString.suffix(abString.count-baseURLCount);
-        let url=URL(string:String(aim))!;
-        if ((url.scheme) != nil) && !(url.scheme?.isEmpty)!{
-            Utils.sharded.load(url: url);
-            aim="runned! "+aim;
+        if(!aim.isEmpty){
+            let url=URL(string:String(aim))!;
+            if ((url.scheme) != nil) && !(url.scheme?.isEmpty)!{
+                Utils.sharded.load(url: url);
+                aim="runned! "+aim;
+            }
         }
         return GCDWebServerDataResponse(html:"<html><body><p>"+aim+"</p></body></html>")
     })

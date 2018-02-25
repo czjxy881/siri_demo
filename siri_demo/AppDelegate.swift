@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         initWebServer();
         
-        Utils.sharded.load(url: URL(string:"http://localhost:12345/")!)
+        Utils.sharded.load(url: URL(string:"http://127.0.0.1:12345/test")!)
         
         
         return true
