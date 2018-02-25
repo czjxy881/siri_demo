@@ -50,6 +50,10 @@ class IntentHandler: INExtension ,  INSendMessageIntentHandling{
             break
         case "蚂蚁森林":
             self.url="alipay://platformapi/startapp?appId=60000002"
+            break;
+        case "地图":
+            self.url="http://localhost:12345/map://"
+            break;
         default:
             completion([INSendMessageRecipientResolutionResult.unsupported(forReason: .noAccount)]);
             return;

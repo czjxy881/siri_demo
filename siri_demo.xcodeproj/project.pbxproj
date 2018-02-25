@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A77F544ADAC841D355BA8D /* Pods_siri_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23B0699AB0F22D62461FAC1 /* Pods_siri_demo.framework */; };
+		6112E3A62997745AF146EF36 /* Pods_DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF255679D2ADEEEDE5163EA /* Pods_DemoKit.framework */; };
+		6208BD56A7F7EA62AE696DBC /* Pods_SiriDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A1A432BEA0B41277D1F8B8 /* Pods_SiriDemo.framework */; };
 		8B8704742042AA800022826B /* DemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8704722042AA800022826B /* DemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B8704772042AA800022826B /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8704702042AA7F0022826B /* DemoKit.framework */; };
 		8B8704782042AA800022826B /* DemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8704702042AA7F0022826B /* DemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -16,6 +19,11 @@
 		8B8704862042B33A0022826B /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8704852042B33A0022826B /* IntentViewController.swift */; };
 		8B8704892042B33A0022826B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8704872042B33A0022826B /* MainInterface.storyboard */; };
 		8B87048D2042B33A0022826B /* SiriDemoUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B8704822042B33A0022826B /* SiriDemoUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B8704922042EC980022826B /* webServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8704912042EC980022826B /* webServer.swift */; };
+		8B8704942042F8EF0022826B /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8704702042AA7F0022826B /* DemoKit.framework */; };
+		8B8704952042F9250022826B /* GCDWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8704962042F9250022826B /* GCDWebServer.framework */; };
+		8B8704972042F94A0022826B /* GCDWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8704982042F94A0022826B /* GCDWebServer.framework */; };
+		8B8704992042F9BA0022826B /* GCDWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B87049A2042F9BA0022826B /* GCDWebServer.framework */; };
 		8B877D16203DCEE90004E7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B877D15203DCEE90004E7AC /* AppDelegate.swift */; };
 		8B877D18203DCEE90004E7AC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B877D17203DCEE90004E7AC /* FirstViewController.swift */; };
 		8B877D1A203DCEE90004E7AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B877D19203DCEE90004E7AC /* SecondViewController.swift */; };
@@ -24,6 +32,7 @@
 		8B877D22203DCEE90004E7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B877D20203DCEE90004E7AC /* LaunchScreen.storyboard */; };
 		8BA90AA62041C0C6000D10D9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA90AA52041C0C6000D10D9 /* IntentHandler.swift */; };
 		8BA90ABC2041C0C7000D10D9 /* SiriDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8BA90AA32041C0C6000D10D9 /* SiriDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC81FEAF531F7A5ACFB86A1C /* Pods_SiriDemoUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DF39EE0D06A6A3B5783479 /* Pods_SiriDemoUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +86,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04F8CF49391AFAC1901CB29C /* Pods-DemoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoKit/Pods-DemoKit.release.xcconfig"; sourceTree = "<group>"; };
+		0A04D8DA9F63BC48D024F805 /* Pods-siri_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siri_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-siri_demo/Pods-siri_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		1AFF158BE12B16A63682B852 /* Pods-SiriDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriDemo/Pods-SiriDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1B7E0A45A8C5E4525D42CE01 /* Pods-siri_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siri_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-siri_demo/Pods-siri_demo.release.xcconfig"; sourceTree = "<group>"; };
+		23065A9AE6037F51EEF00C84 /* Pods-SiriDemoUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriDemoUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriDemoUI/Pods-SiriDemoUI.release.xcconfig"; sourceTree = "<group>"; };
+		43697987BEB90CCBF0143E28 /* Pods-DemoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoKit/Pods-DemoKit.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF255679D2ADEEEDE5163EA /* Pods_DemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C92E76C648E51CA26ECBC6 /* Pods-SiriDemoUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriDemoUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiriDemoUI/Pods-SiriDemoUI.debug.xcconfig"; sourceTree = "<group>"; };
 		8B8704682042A4470022826B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8B8704702042AA7F0022826B /* DemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8704722042AA800022826B /* DemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoKit.h; sourceTree = "<group>"; };
@@ -85,6 +102,11 @@
 		8B8704852042B33A0022826B /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		8B8704882042B33A0022826B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		8B87048A2042B33A0022826B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8704912042EC980022826B /* webServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webServer.swift; sourceTree = "<group>"; };
+		8B8704962042F9250022826B /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8704982042F94A0022826B /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B87049A2042F9BA0022826B /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B87049B2042FA690022826B /* WebServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebServer-Bridging-Header.h"; sourceTree = "<group>"; };
 		8B877D12203DCEE90004E7AC /* siri_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siri_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B877D15203DCEE90004E7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B877D17203DCEE90004E7AC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +120,10 @@
 		8BA90AA52041C0C6000D10D9 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		8BA90AA72041C0C6000D10D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BA90AAE2041C0C7000D10D9 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		B23B0699AB0F22D62461FAC1 /* Pods_siri_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siri_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A1A432BEA0B41277D1F8B8 /* Pods_SiriDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiriDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8DF39EE0D06A6A3B5783479 /* Pods_SiriDemoUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiriDemoUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB58128110CDE40C665FF513 /* Pods-SiriDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiriDemo/Pods-SiriDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6112E3A62997745AF146EF36 /* Pods_DemoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +139,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8704952042F9250022826B /* GCDWebServer.framework in Frameworks */,
+				8B8704942042F8EF0022826B /* DemoKit.framework in Frameworks */,
 				8B8704832042B33A0022826B /* IntentsUI.framework in Frameworks */,
+				EC81FEAF531F7A5ACFB86A1C /* Pods_SiriDemoUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8704972042F94A0022826B /* GCDWebServer.framework in Frameworks */,
 				8B8704772042AA800022826B /* DemoKit.framework in Frameworks */,
+				26A77F544ADAC841D355BA8D /* Pods_siri_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +160,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8704992042F9BA0022826B /* GCDWebServer.framework in Frameworks */,
 				8B87047D2042ABFD0022826B /* DemoKit.framework in Frameworks */,
+				6208BD56A7F7EA62AE696DBC /* Pods_SiriDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +198,7 @@
 				8B8704842042B33A0022826B /* SiriDemoUI */,
 				8BA90AAD2041C0C7000D10D9 /* Frameworks */,
 				8B877D13203DCEE90004E7AC /* Products */,
+				C017BD2CDD7C3DDE8EE3DC4A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +216,7 @@
 		8B877D14203DCEE90004E7AC /* siri_demo */ = {
 			isa = PBXGroup;
 			children = (
+				8B87049B2042FA690022826B /* WebServer-Bridging-Header.h */,
 				8BA90A9E2041BE7C000D10D9 /* siri_demo.entitlements */,
 				8B877D15203DCEE90004E7AC /* AppDelegate.swift */,
 				8B877D17203DCEE90004E7AC /* FirstViewController.swift */,
@@ -189,6 +225,7 @@
 				8B877D1E203DCEE90004E7AC /* Assets.xcassets */,
 				8B877D20203DCEE90004E7AC /* LaunchScreen.storyboard */,
 				8B877D23203DCEE90004E7AC /* Info.plist */,
+				8B8704912042EC980022826B /* webServer.swift */,
 			);
 			path = siri_demo;
 			sourceTree = "<group>";
@@ -205,9 +242,31 @@
 		8BA90AAD2041C0C7000D10D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B87049A2042F9BA0022826B /* GCDWebServer.framework */,
+				8B8704982042F94A0022826B /* GCDWebServer.framework */,
+				8B8704962042F9250022826B /* GCDWebServer.framework */,
 				8BA90AAE2041C0C7000D10D9 /* IntentsUI.framework */,
+				7FF255679D2ADEEEDE5163EA /* Pods_DemoKit.framework */,
+				B3A1A432BEA0B41277D1F8B8 /* Pods_SiriDemo.framework */,
+				C8DF39EE0D06A6A3B5783479 /* Pods_SiriDemoUI.framework */,
+				B23B0699AB0F22D62461FAC1 /* Pods_siri_demo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C017BD2CDD7C3DDE8EE3DC4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43697987BEB90CCBF0143E28 /* Pods-DemoKit.debug.xcconfig */,
+				04F8CF49391AFAC1901CB29C /* Pods-DemoKit.release.xcconfig */,
+				FB58128110CDE40C665FF513 /* Pods-SiriDemo.debug.xcconfig */,
+				1AFF158BE12B16A63682B852 /* Pods-SiriDemo.release.xcconfig */,
+				82C92E76C648E51CA26ECBC6 /* Pods-SiriDemoUI.debug.xcconfig */,
+				23065A9AE6037F51EEF00C84 /* Pods-SiriDemoUI.release.xcconfig */,
+				0A04D8DA9F63BC48D024F805 /* Pods-siri_demo.debug.xcconfig */,
+				1B7E0A45A8C5E4525D42CE01 /* Pods-siri_demo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B8704792042AA800022826B /* Build configuration list for PBXNativeTarget "DemoKit" */;
 			buildPhases = (
+				B22BC898DBBD79BD2363821B /* [CP] Check Pods Manifest.lock */,
 				8B87046B2042AA7F0022826B /* Sources */,
 				8B87046C2042AA7F0022826B /* Frameworks */,
 				8B87046D2042AA7F0022826B /* Headers */,
 				8B87046E2042AA7F0022826B /* Resources */,
+				85E8D7E169F7F47EDC719AE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B87048E2042B33A0022826B /* Build configuration list for PBXNativeTarget "SiriDemoUI" */;
 			buildPhases = (
+				5F588F3183EA548521DF9A8E /* [CP] Check Pods Manifest.lock */,
 				8B87047E2042B33A0022826B /* Sources */,
 				8B87047F2042B33A0022826B /* Frameworks */,
 				8B8704802042B33A0022826B /* Resources */,
+				C3320B438746C96C6D27A5CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,11 +326,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B877D3C203DCEEA0004E7AC /* Build configuration list for PBXNativeTarget "siri_demo" */;
 			buildPhases = (
+				2102D28C99004989B3D2ED5E /* [CP] Check Pods Manifest.lock */,
 				8B877D0E203DCEE90004E7AC /* Sources */,
 				8B877D0F203DCEE90004E7AC /* Frameworks */,
 				8B877D10203DCEE90004E7AC /* Resources */,
 				8BA90AC32041C0C7000D10D9 /* Embed App Extensions */,
 				8B0E773620428C73009FA9F5 /* Embed Frameworks */,
+				4DED7808BD4C17189872B7DB /* [CP] Embed Pods Frameworks */,
+				2A9E2BFE62A71097A13DFE62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,9 +351,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BA90AC02041C0C7000D10D9 /* Build configuration list for PBXNativeTarget "SiriDemo" */;
 			buildPhases = (
+				C4F787F6A23334807C39AC43 /* [CP] Check Pods Manifest.lock */,
 				8BA90A9F2041C0C6000D10D9 /* Sources */,
 				8BA90AA02041C0C6000D10D9 /* Frameworks */,
 				8BA90AA12041C0C6000D10D9 /* Resources */,
+				7B7A6E8CF53B0D7B55EED759 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +388,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Siri = {
 								enabled = 1;
 							};
@@ -390,6 +461,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2102D28C99004989B3D2ED5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-siri_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A9E2BFE62A71097A13DFE62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-siri_demo/Pods-siri_demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DED7808BD4C17189872B7DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-siri_demo/Pods-siri_demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-siri_demo/Pods-siri_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F588F3183EA548521DF9A8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiriDemoUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B7A6E8CF53B0D7B55EED759 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiriDemo/Pods-SiriDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E8D7E169F7F47EDC719AE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoKit/Pods-DemoKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22BC898DBBD79BD2363821B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3320B438746C96C6D27A5CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiriDemoUI/Pods-SiriDemoUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4F787F6A23334807C39AC43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiriDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B87046B2042AA7F0022826B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -414,6 +638,7 @@
 				8B877D1A203DCEE90004E7AC /* SecondViewController.swift in Sources */,
 				8B877D16203DCEE90004E7AC /* AppDelegate.swift in Sources */,
 				8B877D18203DCEE90004E7AC /* FirstViewController.swift in Sources */,
+				8B8704922042EC980022826B /* webServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +700,7 @@
 /* Begin XCBuildConfiguration section */
 		8B87047A2042AA800022826B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43697987BEB90CCBF0143E28 /* Pods-DemoKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +725,7 @@
 		};
 		8B87047B2042AA800022826B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04F8CF49391AFAC1901CB29C /* Pods-DemoKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +750,7 @@
 		};
 		8B87048F2042B33A0022826B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C92E76C648E51CA26ECBC6 /* Pods-SiriDemoUI.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86UUNEZV42;
@@ -538,6 +766,7 @@
 		};
 		8B8704902042B33A0022826B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23065A9AE6037F51EEF00C84 /* Pods-SiriDemoUI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86UUNEZV42;
@@ -660,6 +889,7 @@
 		};
 		8B877D3D203DCEEA0004E7AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A04D8DA9F63BC48D024F805 /* Pods-siri_demo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -677,6 +907,7 @@
 		};
 		8B877D3E203DCEEA0004E7AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7E0A45A8C5E4525D42CE01 /* Pods-siri_demo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -694,6 +925,7 @@
 		};
 		8BA90AC12041C0C7000D10D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB58128110CDE40C665FF513 /* Pods-SiriDemo.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
@@ -710,6 +942,7 @@
 		};
 		8BA90AC22041C0C7000D10D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFF158BE12B16A63682B852 /* Pods-SiriDemo.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;

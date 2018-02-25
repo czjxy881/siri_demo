@@ -24,7 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vocabulary = INVocabulary.shared()
         vocabulary.setVocabularyStrings(myVocabSet, of: .contactName);
         Utils.sharded.openURL = { UIApplication.shared.open($0, options: [:], completionHandler: nil)}
-        Utils.sharded.load(url: URL(string:"http://www.baidu.com")!)
+        
+        initWebServer();
+        
+        Utils.sharded.load(url: URL(string:"http://localhost:12345/")!)
+        
+        
         return true
     }
 
@@ -57,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        UIApplication.shared.beginBackgroundTask(expirationHandler: nil);
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
