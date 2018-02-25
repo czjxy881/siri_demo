@@ -46,7 +46,8 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
         let intent=interaction.intent as! INSendMessageIntent;
         let content:String=(intent).content!;
         if  !(content.isEmpty) && !intent.isEqual(self.lastIntent) && !content.elementsEqual("success"){
-            self.extensionContext?.open(URL(string:content)!, completionHandler: nil)
+            //只有Today Extension才可以用
+//            self.extensionContext?.open(URL(string:"xiaoxiao://"+content)!, completionHandler: nil)
             self.lastIntent=intent;
         }
         completion(self.desiredSize);

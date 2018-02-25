@@ -37,6 +37,9 @@ class IntentHandler: INExtension ,  INSendMessageIntentHandling{
     
     // Implement resolution methods to provide additional information about your intent (optional).
     func resolveRecipients(for intent: INSendMessageIntent, with completion: @escaping ([INSendMessageRecipientResolutionResult]) -> Void) {
+        if(intent.recipients?.count==0){
+            completion([INSendMessageRecipientResolutionResult.needsValue()]);return
+        }
         guard let name=intent.recipients?[0].displayName else {completion([INSendMessageRecipientResolutionResult.needsValue()]);return};
         switch name {
         case "关空调":
@@ -72,14 +75,17 @@ class IntentHandler: INExtension ,  INSendMessageIntentHandling{
     
     // Once resolution is completed, perform validation on the intent and provide confirmation (optional).
     
-//    func confirm(intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
-//        // Verify user is authenticated and your app is ready to send a message.
-//        //        handler(intent:intent,completion:completion);
-//        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
-//        
-//        let response = INSendMessageIntentResponse(code: .ready, userActivity: userActivity)
-//        completion(response)
-//    }
+    func confirm(intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
+        // Verify user is authenticated and your app is ready to send a message.
+        //        handler(intent:intent,completion:completion);
+        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
+        
+        var response = INSendMessageIntentResponse(code: .ready, userActivity: userActivity)
+        if(!(intent.content?.elementsEqual("success"))!){
+            response = INSendMessageIntentResponse(code: .failureRequiringAppLaunch, userActivity: userActivity)
+        }
+        completion(response)
+    }
     
     // Handle the completed intent (requ`ired).
     
